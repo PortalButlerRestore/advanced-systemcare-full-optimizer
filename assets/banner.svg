@@ -1,0 +1,107 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1420"/>
+      <stop offset="55%" stop-color="#0f2233"/>
+      <stop offset="100%" stop-color="#0a1a28"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#31d3c8" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#31d3c8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gearGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c3a4d"/>
+      <stop offset="100%" stop-color="#0d1e2a"/>
+    </linearGradient>
+    <linearGradient id="arcGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38f0d1"/>
+      <stop offset="100%" stop-color="#2a8fff"/>
+    </linearGradient>
+    <linearGradient id="headGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#b9f5ea"/>
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2ce6c9"/>
+      <stop offset="100%" stop-color="#1f9dff"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+  <circle cx="920" cy="150" r="260" fill="url(#glow1)"/>
+
+  <!-- subtle grid -->
+  <g stroke="#1c3a4d" stroke-width="1" opacity="0.35">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="200" y1="0" x2="200" y2="360"/>
+    <line x1="400" y1="0" x2="400" y2="360"/>
+    <line x1="1000" y1="0" x2="1000" y2="360"/>
+  </g>
+
+  <!-- decorative circuitry lines -->
+  <g stroke="#2ce6c9" stroke-width="2" fill="none" opacity="0.5">
+    <path d="M 780 40 L 780 90 L 850 90 L 850 130"/>
+    <path d="M 950 40 L 950 70 L 900 70 L 900 110"/>
+    <path d="M 1140 200 L 1080 200 L 1080 250 L 1020 250"/>
+    <circle cx="850" cy="130" r="5" fill="#2ce6c9"/>
+    <circle cx="900" cy="110" r="4" fill="#2ce6c9"/>
+    <circle cx="1020" cy="250" r="4" fill="#2ce6c9"/>
+  </g>
+
+  <!-- gear cluster (system care visual) -->
+  <g transform="translate(940,190)">
+    <g transform="rotate(15)">
+      <circle r="70" fill="url(#gearGrad)" stroke="#2ce6c9" stroke-width="2" opacity="0.85"/>
+      <g fill="url(#gearGrad)" stroke="#2ce6c9" stroke-width="2">
+        <rect x="-10" y="-88" width="20" height="24" rx="3"/>
+        <rect x="-10" y="64" width="20" height="24" rx="3"/>
+        <rect x="-88" y="-10" width="24" height="20" rx="3"/>
+        <rect x="64" y="-10" width="24" height="20" rx="3"/>
+        <rect x="50" y="-72" width="20" height="24" rx="3" transform="rotate(45)"/>
+        <rect x="50" y="48" width="20" height="24" rx="3" transform="rotate(135)"/>
+        <rect x="-70" y="48" width="20" height="24" rx="3" transform="rotate(-135)"/>
+        <rect x="-70" y="-72" width="20" height="24" rx="3" transform="rotate(-45)"/>
+      </g>
+      <circle r="30" fill="#0d1e2a" stroke="#38f0d1" stroke-width="2"/>
+    </g>
+    <g transform="translate(90,60) rotate(-10)">
+      <circle r="42" fill="url(#gearGrad)" stroke="#2a8fff" stroke-width="2" opacity="0.8"/>
+      <g fill="url(#gearGrad)" stroke="#2a8fff" stroke-width="2">
+        <rect x="-6" y="-54" width="12" height="16" rx="2"/>
+        <rect x="-6" y="38" width="12" height="16" rx="2"/>
+        <rect x="-54" y="-6" width="16" height="12" rx="2"/>
+        <rect x="38" y="-6" width="16" height="12" rx="2"/>
+      </g>
+      <circle r="18" fill="#0d1e2a" stroke="#38f0d1" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- progress arc suggesting optimization -->
+  <path d="M 700 300 A 220 220 0 0 1 1130 300" fill="none" stroke="#12384a" stroke-width="10" opacity="0.6"/>
+  <path d="M 700 300 A 220 220 0 0 1 1000 130" fill="none" stroke="url(#arcGrad)" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- shield icon suggesting "care/protection" -->
+  <g transform="translate(1075,95)">
+    <path d="M0 -30 L28 -18 L28 12 C28 34 14 46 0 52 C-14 46 -28 34 -28 12 L-28 -18 Z" fill="#0d1e2a" stroke="#38f0d1" stroke-width="2.5"/>
+    <path d="M-12 2 L-3 12 L14 -10" fill="none" stroke="#2ce6c9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- headline -->
+  <text x="60" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="52" font-weight="700" fill="url(#headGrad)">
+    <tspan x="60" y="150" textLength="1000" lengthAdjust="spacingAndGlyphs">Advanced SystemCare Full</tspan>
+    <tspan x="60" y="212" textLength="560" lengthAdjust="spacingAndGlyphs">Version Download</tspan>
+  </text>
+
+  <!-- tagline -->
+  <text x="60" y="256" font-family="'Segoe UI', Arial, sans-serif" fill="#9fd8d0" textLength="1080.0" lengthAdjust="spacingAndGlyphs" font-size="22.6">
+    Pluggable download manager for the Advanced SystemCare Full Version ecosystem
+  </text>
+
+  <!-- accent tick line -->
+  <rect x="60" y="270" width="120" height="6" rx="3" fill="url(#btnGrad)"/>
+  <circle cx="200" cy="273" r="5" fill="#2ce6c9"/>
+  <circle cx="220" cy="273" r="3.5" fill="#2a8fff" opacity="0.8"/>
+</svg>
